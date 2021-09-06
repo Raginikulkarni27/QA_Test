@@ -106,6 +106,14 @@ public class TestPage extends Baseclass {
 	    System.out.println("invalid username or password");
 	    }
 		
+	}
+	
+	@Test
+	public void TestCase5() {
+		Reporter.log("clicking lost password link",true);
+		login.lostpassword();
+		driver.switchTo().frame(0);
+		login.recovery();
 		
 	}
 	
@@ -119,4 +127,5 @@ public class TestPage extends Baseclass {
 	    
 		
 	}
+
 
