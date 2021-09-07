@@ -11,7 +11,7 @@ public class homePage  {
 	@FindBy(xpath = "(//span[text()='Platform'])[1]") private WebElement VerifyText;
 	
 	
-
+}
 	
 	public homePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -23,17 +23,7 @@ public class homePage  {
 		return actText;
 		}
 	
-//	public void verification(String expText) {
-//		String acttext = VerifyText.getText();
-//		
-//		if(acttext.equals(expText)) {
-//			driver.findElement(By.xpath("//a[@command='logout']")).click();
-//		}
-//		else {
-//			System.out.println("invalid username or password");
-//		}
-		
-	}
+}
 	
 	
 
